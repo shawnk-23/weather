@@ -9,7 +9,7 @@ async function getWeather2(){
         
                 myurl = `https://api.openweathermap.org/data/2.5/forecast/daily?zip=${cityCheck}&cnt=5&appid=eecec2717dd473b53436bc81df4f7dff`     
         }else if (/^[a-zA-Z]+$/.test(trimmedC)){
-                myurl = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${cityCheck}&units=metric&cnt=5&appid=eecec2717dd473b53436bc81df4f7dff`     
+                myurl = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${cityCheck}&cnt=5&appid=eecec2717dd473b53436bc81df4f7dff`     
         }else {
                 throw new Error('Invalid City or Zip');
         }
@@ -59,7 +59,7 @@ function showweather2(data){
             </div>
             `
         }
-    })
+    }).join(' ')
 
 }
 
