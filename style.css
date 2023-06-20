@@ -1,0 +1,20 @@
+body{
+    background-image: url('/2.jpg');
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+h3{
+    color: blue;
+}
+span{
+    color: red;
+}
+#err{
+    color: white;
+    background-color: red;
+}
+#type{
+    color: white;
+    background-color: green;
+}
